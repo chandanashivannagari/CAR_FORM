@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Web Application</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .italic-text {
+            font-style: italic;
+        }
+
+        .underline-text {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Form Styles */
+        
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        select {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       #bookingform{
+           background-color: #fff;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+       }
+       #company{
+           color:#008000;
+             font-style: italic; 
+       }
+    </style>
+</head>
+<body>
+    <h1>Car Web Application</h1>
+       <p>Car Image:</p>
+    <img src="https://www.kindpng.com/picc/m/348-3485041_group-of-car-images-png-transparent-png.png" alt="Car Image">
+    <h4>for advance booking fill your details here</h4>
+    <forms id="bookingform">
+        <label for="firstName">First Name:</label>
+<input type="text" id="firstName" name="firstName">
+<br><br>
+
+<label for="lastName">Last Name:</label>
+<input type="text" id="lastName" name="lastName">
+<br><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+<br><br>
+
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone">
+<br><br>
+
+    </forms>
+    
+    <p><strong class="underline-text">This is a simple web application for cars.</strong></p>
+    
+    <p>List of cars:</p>
+    <ul id="company">
+        <li>Indica</li>
+        <li>Swift</li>
+        <li>Innova</li>
+    </ul>
+    
+    <p>Links:</p>
+    <a href="#">Car Details</a>
+    
+ 
+    
+    <p>Car Table:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Toyota</td>
+                <td>Camry</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Ford</td>
+                <td>Mustang</td>
+                <td>2022</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>HTML Form</h2>
+    <form>
+        <label for="carMake">Car Make:</label>
+        <input type="text" id="carMake" name="carMake">
+        <br><br>
+        
+        <label for="carModel">Car Model:</label>
+        <input type="text" id="carModel" name="carModel">
+        <br><br>
+        <label for="carYear">Car Year:</label>
+        <select id="carYear" name="carYear">
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+        </select>
+        <br><br>
+        <label>Car Type:</label>
+        <input type="radio" id="sedan" name="carType" value="Sedan" checked>
+        Sedan</input>
+        <br><br>
+        <input type="radio" id="suv" name="carType" value="SUV">
+        SUV</input>
+        
+        <br><br>
+        
+        <label>Features:</label>
+        <input type="checkbox" id="ac" name="features" value="AC">
+        AC</input>
+        <br><br>
+        <input type="checkbox" id="gps" name="features" value="GPS">
+        GPS</input>
+        
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
